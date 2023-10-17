@@ -1,0 +1,36 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "accessbilityTest": "nyc npx playwright test tests/AccessbilityTest",
+    "accessbility": "cross-env test_env=clydsqa npx playwright test  tests/AccessbilityTest",
+    "clydsqa": "cross-env test_env=clydsqa npx playwright test tests/clydsMortgage",
+    "test": "nyc npx playwright test",
+    "dev": "cross-env test_env=dev npx playwright test",
+    "qa": "cross-env test_env=qa npx playwright test",
+    "uat": "cross-env test_env=uat npx playwright test",
+    "coveragedev": "cross-env test_env=dev nyc npx playwright test",
+    "coverageqa": "cross-env test_env=qa nyc npx playwright test",
+    "coverageuat": "cross-env test_env=uat nyc npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.35.1",
+    "allure-playwright": "^2.0.0-beta.19",
+    "axe-playwright": "^1.2.3",
+    "babel-plugin-istanbul": "^6.1.1",
+    "cross-env": "^7.0.3",
+    "nyc": "^15.1.0",
+    "playwright-test-coverage": "^1.2.8"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.7.3",
+    "awesome-typescript-loader": "^5.2.1",
+    "dotenv": "^16.0.3",
+    "source-map-loader": "^4.0.1"
+  }
+}

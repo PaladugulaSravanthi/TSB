@@ -1,0 +1,35 @@
+{
+    "valid": {
+        "firstName" : "Mortgage",
+        "lastName" : "Nobureau",
+        "cityOfBirth" : "Nottingham"
+    },
+    "maxCharacters": {  
+        "firstName" : "MortgageNoBureauMortgageNoBureauMortgageNoBureauMortgageNoBureauMortgageNoBureauMortgageNoBureauMortgage",
+        "lastName"  : "MortgageNoBureauMortgageNoBureauMortgageNoBureauMortgageNoBureauMortgageNoBureauMortgageNoBureauMortgage"
+
+    },
+    "numericValue": {
+        "firstName" : "123456",
+        "lastName"  : "123456",
+        "amount" : "9999999999"
+    },
+    "invalidAddressData": {
+        "postCode" : "1234",
+        "telephoneNumber": "abc",
+        "emailAddress" : "email"
+
+    },
+    "validAddressData": {
+        "postCode" : "NG16DQ",
+        "telephoneNumber": "07777555333",
+        "emailAddress" : "a@a.com"
+
+    },
+    "validPropertyData": {
+        "higherLoanAmount" : "400000",
+        "purchasePrice" : "300000",
+        "loanAmount": "90000",
+        "validPurchasePrice": "120000"
+    }
+}
