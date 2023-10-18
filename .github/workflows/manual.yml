@@ -6,7 +6,7 @@ on:
     branches: [ main, master ]
 jobs:
   test:
-    timeout-minutes: 60
+    timeout-minutes: 6
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
@@ -17,6 +17,9 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+    - name: Install Multi Environment
+      run: npm install dotenv --save  
+      run: npm install --save-dev cross-env   
     - name: Run Playwright tests
       run: npm run uat
     - uses: actions/upload-artifact@v3
