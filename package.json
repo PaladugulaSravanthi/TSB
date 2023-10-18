@@ -19,7 +19,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.35.1",
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.7",
     "allure-playwright": "^2.0.0-beta.19",
     "axe-playwright": "^1.2.3",
     "babel-plugin-istanbul": "^6.1.1",

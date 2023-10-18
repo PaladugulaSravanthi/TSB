@@ -527,3 +527,6 @@ allure-results/fcd4454c-930a-470f-ad5a-a97d11419912-result.json
 /test-results/
 /playwright-report/
 /playwright/.cache/
+/test-results/
+/playwright-report/
+/playwright/.cache/
