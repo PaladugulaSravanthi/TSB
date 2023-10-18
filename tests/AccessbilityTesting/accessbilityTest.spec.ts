@@ -29,7 +29,7 @@ test.describe.skip('Playwright accessbility test', () => {
 
 
 
-    test.only('check ally for specific element',async () => {
+    test('check ally for specific element',async () => {
         await checkA11y(page, 'input[name="PropertyValue"]', {
             axeOptions: {
                 runOnly: {
