@@ -2,10 +2,10 @@ import test, {expect} from "../Fixtures/test-base";
 import ENV from "../utils/env";
 
 test.describe('Verify Mortgage Eligibility When single applicant submits application', () => {
-  test.only('Applicant submits Eligibility criteria for Mortgage @smoke', async({page,eligibilityCriteria}) => {
+  test('Applicant submits Eligibility criteria for Mortgage @smoke', async({page,eligibilityCriteria}) => {
 
     await page.goto(ENV.BASE_URL);
-    //await eligibilityCriteria.clickAcceptCookies();
+    await eligibilityCriteria.clickAcceptCookies();
     await eligibilityCriteria.selectBuyAHome();
     await eligibilityCriteria.selectSoleApplicant();
     await eligibilityCriteria.haveChatWithMortgageExperts();

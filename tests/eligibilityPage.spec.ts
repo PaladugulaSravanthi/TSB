@@ -5,9 +5,9 @@ import ENV from "../utils/env";
 
   test.describe("Verify Error text when applicant does not meet Eligibility Crtiteria", () => {
 
-    test('Verify the title of the page @smoke', async ({eligibilityCriteria,page}) => {
+    test.only('Verify the title of the page @smoke', async ({eligibilityCriteria,page}) => {
       await page.goto(ENV.BASE_URL);
-      //await eligibilityCriteria.clickAcceptCookies();
+      await eligibilityCriteria.clickAcceptCookies();
       await expect(page).toHaveTitle("TSB Mortgages - Mortgage Promise");
     });
 
