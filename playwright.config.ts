@@ -10,7 +10,7 @@ const config: PlaywrightTestConfig = {
   timeout: 300000,
   reporter: "html",
   use: {
-    headless: false,
+    headless: true,
   },
   globalSetup: "utils/globalSetup.ts"
 };
