@@ -7,7 +7,7 @@ const config: PlaywrightTestConfig = {
   testDir: './tests',
   workers: 1,
   //testMatch: ["tests/sample.spec.ts"],
-  timeout: 3000000,
+  timeout: 300000,
   reporter: "html",
   use: {
     headless: false,
